@@ -1,13 +1,10 @@
-package pickacard;
-
 import java.util.Scanner;
-
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects and then asks the user to pick a card and
  * searches the array of cards for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author Jean Hoang
- * @author # 991580595
+ * Student #:991580595
  */
 public class CardTrick {
 
@@ -49,10 +46,17 @@ public class CardTrick {
                 "1. Diamonds\n" +
                 "2. Spades\n" +
                 "3. Clubs\n");
+
+        System.out.println("Are you the winner?\n"
+                                + "...\n");
         System.out.print("The magic hand draws: ");
         System.out.println(c);
+
+        if (c.getValue() == ipValue && mhSuit == ipSuit) {
+            System.out.println("You win!");
+        } else
+            System.out.println("Boo! Loser!");
         //Then report the result here
-        System.out.println("Are you a winner?");
     }
 
 }
