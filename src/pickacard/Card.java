@@ -38,6 +38,14 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
+    
+    public int randomNumber() {
+        int number;
+        
+        number = (int)(Math.random()*3.5);
+        
+        return number;
+    }
    
    
     
