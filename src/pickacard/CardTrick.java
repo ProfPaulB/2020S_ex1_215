@@ -22,18 +22,13 @@ public class CardTrick {
             magicHand[i] = c;
         }
     
-        
-        Scanner input = new Scanner(System.in);
-        
-        System.out.println("enter value for card ");
-        int value = input.nextInt();
-        
-        System.out.println("enter value for suit");
-        String suit = input.next();
+        Card luckyCard = new Card();
+        luckyCard.setValue(4);
+        luckyCard.setSuit("Clubs")
         
         int temp = 0;
         for(int i = 0; i < magicHand.length; i++){
-            if(value==magicHand[i].getValue() && suit.equalsIgnoreCase(magicHand[i].getSuit()))
+            if(luckyCard.getValue()==magicHand[i].getValue() && luckyCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit()))
             {
                 temp=1;
             }
