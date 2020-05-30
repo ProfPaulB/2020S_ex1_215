@@ -22,17 +22,14 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int)(Math.random() * 4)]);   
             magicHand[i] = c;
         }
-        
-        Card a = new Card();
+       
         Scanner in = new Scanner(System.in);                
-        
-        System.out.println("Enter card value (1-13)");     
-        a.setValue(in.nextInt());                          
-        System.out.println("Enter card suit (0-3");
-        a.setSuit(Card.SUITS[in.nextInt()]);
+        Card luckyCard = new Card();
+        luckyCard.setValue(9);                          
+        luckyCard.setSuit(Card.SUITS[2]);
         
         for (Card magicHand1 : magicHand) {         
-            if (a == magicHand1){
+            if (luckyCard == magicHand1){
                 System.out.println("It's a match!");
             }else{
                 System.out.println("Not a match!");
