@@ -31,17 +31,6 @@ public class CardTrick {
         }
         
         
-        //insert code to ask the user for Card value and suit, create their card
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter card value(note that Ace = 1, Jack -11, Queen =12, King = 13)");
-        int userValue = input.nextInt();
-        System.out.println("Please enter card suit{\"Hearts\",\"Diamonds\",\"Spades\",\"Clubs\"}");
-        String userSuit = input.next();
-        
-        Card usersCard = new Card();
-        usersCard.setSuit(userSuit);
-        usersCard.setValue(userValue);
-        
         //Hard coding a new Card Object from Github
         Card luckyCard = new Card();
         luckyCard.setSuit("Diamonds");
@@ -54,7 +43,7 @@ public class CardTrick {
         String searchResults ="";
          for(Card c:magicHand){
              
-             if(usersCard.getValue() == c.getValue() && usersCard.getSuit() == c.getSuit()){
+             if(luckyCard.getValue() == c.getValue() && luckyCard.getSuit() == c.getSuit()){
                  searchResults = "We have a match!";
              }
              else{
@@ -63,8 +52,8 @@ public class CardTrick {
         }
          
          System.out.println(searchResults);
-         System.out.println("your card is: ");
-         System.out.println(usersCard.getValue()+usersCard.getSuit());
+         System.out.println("The lucky card used is: ");
+         System.out.println(luckyCard.getValue()+luckyCard.getSuit());
          
          /*System.out.println("The magicHand is: ");
          for(Card c:magicHand){
