@@ -24,7 +24,7 @@ public class CardTrick {
     
         Card luckyCard = new Card();
         luckyCard.setValue(4);
-        luckyCard.setSuit("Clubs")
+        luckyCard.setSuit("Clubs");
         
         int temp = 0;
         for(int i = 0; i < magicHand.length; i++){
