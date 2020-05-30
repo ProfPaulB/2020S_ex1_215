@@ -22,13 +22,9 @@ public class CardTrick {
         }
     
         
-        Scanner input = new Scanner(System.in);
-        
-        System.out.println("enter card value ");
-        int value = input.nextInt();
-        
-        System.out.println("enter card suit");
-        String suit = input.next();
+        Card luckyCard = new Card();
+        luckyCard.setValue(9);                          
+        luckyCard.setSuit(Card.SUITS[2]);
         
         int result = 0;
         for(int i = 0; i < magicHand.length; i++){
