@@ -39,6 +39,10 @@ public class Card {
         this.value = value;
     }
     
+    /**
+     * 
+     * @return number
+     */
     public int randomSuit() {
         int number;
         
@@ -47,6 +51,10 @@ public class Card {
         return number;
     }
     
+    /**
+     * 
+     * @return number
+     */
     public int randomNumber() {
         int number;
         
@@ -55,6 +63,20 @@ public class Card {
         return number;
     }
     
+    /**
+     * 
+     * @param match
+     * @return report
+     */
+    public String report(int match) {
+        return "report: " + match + " match(es) found in magicHand";
+    }
+    
+    
+    /**
+     * 
+     * @return string
+     */
     public String toString() {
         
         return getValue() + " of " + getSuit();
