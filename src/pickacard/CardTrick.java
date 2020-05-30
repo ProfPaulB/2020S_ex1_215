@@ -27,21 +27,15 @@ public class CardTrick {
             
             c.setValue(randNum.nextInt(13) + 1); 
             c.setSuit(Card.SUITS[randNum.nextInt(4)]); 
+            
             magicHand[i] = c;
             
         }
-        
-        Card userCard = new Card();
-        
-        System.out.print("Enter a card number: ");
-        userCard.setValue(in.nextInt());
-        System.out.print("Enter a card suit: ");
-        userCard.setSuit(in.next());
-        
+
         int i = 1;
         
         for (Card c : magicHand) {
-            if (c == userCard){
+            if (c == luckyCard){
                 System.out.printf("Card number %d in the magic hand is the"
                         + " same as yours.\n", i);
                 break;
