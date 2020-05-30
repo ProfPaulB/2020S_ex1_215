@@ -42,6 +42,11 @@ public class CardTrick {
         usersCard.setSuit(userSuit);
         usersCard.setValue(userValue);
         
+        //Hard coding a new Card Object from Github
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Diamonds");
+        luckyCard.setValue(2);
+        
         
        
         // and search magicHand here
