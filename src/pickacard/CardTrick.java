@@ -20,7 +20,7 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         Card luckyCard = new Card();
         luckyCard.setValue(12);
-        luckyCard.setSuit(Spade);
+        luckyCard.setSuit("Spade");
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
