@@ -7,8 +7,8 @@ package pickacard;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in Exercise 1. When you create your own branch,
  * add your name as an author.
- * @author dancye
- * @author Paul Bonenfant
+ * 
+ * @author Daksh Arora 29 May 2020
  */
 public class Card {
 
