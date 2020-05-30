@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author dancye
  * @author Paul Bonenfant
- * @Juan Aranda, May 2020
+ * @author Juan Aranda, May 2020
  */
 public class CardTrick {
 
