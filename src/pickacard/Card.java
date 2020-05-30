@@ -39,14 +39,26 @@ public class Card {
         this.value = value;
     }
     
-    public int randomNumber() {
+    public int randomSuit() {
         int number;
         
         number = (int)(Math.random()*3.5);
         
         return number;
     }
-   
+    
+    public int randomNumber() {
+        int number;
+        
+        number = (int)(Math.random()*13);
+        
+        return number;
+    }
+    
+    public String toString() {
+        
+        return getValue() + " of " + getSuit();
+    }
    
     
 }
