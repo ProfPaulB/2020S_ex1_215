@@ -26,12 +26,13 @@ public class CardTrick {
         Card luckyCard = new Card();
         luckyCard.setValue(9);                          
         luckyCard.setSuit(Card.SUITS[2]);
+        System.out.println("Lucky card: " + luckyCard.getValue() + " " + luckyCard.getSuit());
         
         for (Card magicHand1 : magicHand) {         
             if (luckyCard == magicHand1){
-                System.out.println("It's a match!");
+                System.out.println("Winner! It's a match!");
             }else{
-                System.out.println("Not a match!");
+                System.out.println("No Match! " + magicHand1.getValue() + " " + magicHand1.getSuit());
             }
         }
     }
