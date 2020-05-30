@@ -9,6 +9,8 @@ package pickacard;
  * add your name as an author.
  * @author dancye
  * @author Paul Bonenfant
+ * @author Edgar Chavez
+ * Date: 5/30/2020
  */
 public class Card {
 
@@ -16,6 +18,17 @@ public class Card {
    private int value;//1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   
+    public Card() {
+        this.suit = "";
+        this.value = 0;
+    }
+    
+    public Card(String suit, int value) {
+        this.suit = suit;
+        this.value = value;
+    }
+   
     /**
      * @return the suit
      */
@@ -44,6 +57,9 @@ public class Card {
         this.value = value;
     }
    
-   
+   @Override
+    public String toString(){
+        return String.format("Number: %s Suit: %s", this.value, this.suit);
+    }
     
 }
