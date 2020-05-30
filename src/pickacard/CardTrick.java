@@ -30,6 +30,7 @@ public class CardTrick {
         //and search magicHand here
         //Then report the result here
         Scanner scan = new Scanner(System.in);
+        int match = 0;
         
         System.out.print("Enter Card Value >>> ");
         int userCardValue = scan.nextInt();
@@ -45,12 +46,17 @@ public class CardTrick {
         userCard.setSuit(userCardSuit);
         userCard.setValue(userCardValue);
         
-        System.out.println(userCard);
-        
         for (int i=0; i<magicHand.length;i++) {
             System.out.println(magicHand[i]);
+            
+            if ((magicHand[i].toString()).equals(userCard.toString())){
+                System.out.println("\nMatch Found!");
+                
+                match++;
+            }
         }
         
+        System.out.println(userCard.report(match));
         
     }
 }
