@@ -9,6 +9,7 @@ package pickacard;
  * add your name as an author.
  * @author dancye
  * @author Paul Bonenfant
+ * @author Robin Methot, May 29
  */
 public class Card {
 
@@ -44,6 +45,9 @@ public class Card {
         this.value = value;
     }
    
-   
+    public String toString() {
+        return String.format("\nThe Magic Hand pulled the card %d of %s.",
+                value, suit);
+    }    
     
 }
