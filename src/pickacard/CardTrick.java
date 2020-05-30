@@ -52,6 +52,7 @@ public class CardTrick {
         System.out.print("The magic hand draws: ");
         System.out.println(c);
         //Then report the result here
+        System.out.println("Are you a winner?");
     }
 
 }
