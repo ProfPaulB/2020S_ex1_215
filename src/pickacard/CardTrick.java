@@ -28,8 +28,9 @@ public class CardTrick {
         luckyCard.setSuit(Card.SUITS[2]);
         System.out.println("Lucky card: " + luckyCard.getValue() + " " + luckyCard.getSuit());
         
-        for (Card magicHand1 : magicHand) {         
-            if (luckyCard == magicHand1){
+      for (Card magicHand1 : magicHand) {         
+            if (luckyCard.getValue() == magicHand1.getValue() 
+                    && luckyCard.getSuit().equalsIgnoreCase(magicHand1.getSuit())){
                 System.out.println("Winner! It's a match!");
             }else{
                 System.out.println("No Match! " + magicHand1.getValue() + " " + magicHand1.getSuit());
