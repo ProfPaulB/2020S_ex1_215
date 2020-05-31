@@ -43,11 +43,5 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
-    }
-   
-    public String toString() {
-        return String.format("\nThe Magic Hand pulled the card %d of %s.",
-                value, suit);
-    }    
-    
+    }  
 }
