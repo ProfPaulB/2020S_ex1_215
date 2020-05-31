@@ -15,6 +15,11 @@ public class CardTrick {
         Scanner in = new Scanner(System.in);
         Card[] magicHand = new Card[7];
         
+        // Enter the lucky card
+        Card luckyCard = new Card();
+        luckyCard.setValue(5);
+        luckyCard.setSuit("Diamonds");
+        
         String magicHandSuit = null;
         
         Card c = null;
@@ -33,24 +38,14 @@ public class CardTrick {
         System.out.println("There are 52 cards in the deck and four suits.\n"
                 + "Hearts, Diamonds, Spades, and Clubs.");
         
-        System.out.print("\nEnter a number for your card between 1-13: ");
-        int userValue = in.nextInt();
-        
-        System.out.print("Enter a suit for your card: ");
-        String userSuit = in.next();
-        
-        System.out.printf("\nYou picked the card %d of %s.\n", userValue, userSuit);
-        
-        // and search magicHand here
-        System.out.println(c);
-        
-        if (c.getValue() == userValue && magicHandSuit == userSuit){
-            System.out.print("Congratulations, you won!");
+        if (luckyCard.getValue() == c.getValue() && luckyCard.getSuit().equalsIgnoreCase(c.getSuit())){
+            System.out.print("\nThe Lucky Card was the " + c.getValue() +
+                    " of " + c.getSuit() + ".");
+            System.out.print("\nCongratulations, you won!");
         } else {
-            System.out.print("Sorry, please try again.");
-        }
-        
-        //Then report the result here
+            System.out.print("\nThe Lucky Card was the " + c.getValue() +
+                    " of " + c.getSuit() + ".");            
+            System.out.print("\nSorry, please try again.");
+        }        
     }
-
 }
