@@ -12,6 +12,7 @@ public class CardTrick {
     public static void main(String[] args) {
         
         Card[] magicHand = new Card[7];
+        Card cardTrick = new Card (7,"Spades");
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
