@@ -6,6 +6,7 @@ package pickacard;
  *
  * @author dancye
  * @author Paul Bonenfant
+ * @author mishail
  */
 public class CardTrick {
 
