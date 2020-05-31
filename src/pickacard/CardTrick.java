@@ -70,5 +70,10 @@ public class CardTrick {
         //presenting a report to user at the end
         System.out.println(userCard.report(match));
         
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Hearts");
+        luckyCard.setValue(7);
+        
+        
     }
 }
