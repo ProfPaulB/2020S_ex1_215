@@ -44,6 +44,9 @@ public class CardTrick {
         else{
             System.out.println("Your card isn't in the magic hand");
         }
+        
+        System.out.println("Magic hand was: card number " + randNumber + 
+                " suit Number: " + randSuit);
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
