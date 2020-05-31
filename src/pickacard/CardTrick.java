@@ -52,27 +52,30 @@ public class CardTrick {
         
         //creating a new userCard object for user and
         //sets the values according to the values the user entered
-        Card userCard = new Card();
-        userCard.setSuit(userCardSuit);
-        userCard.setValue(userCardValue);
+        Card luckyCard = new Card();
+        luckyCard.setSuit(userCardSuit);
+        luckyCard.setValue(userCardValue);
         
         //checking if user's card matches with any card in magicHand
         //and counting if any match is found
         for (int i=0; i<magicHand.length;i++) {
                         
-            if ((magicHand[i].toString()).equals(userCard.toString())){
-                System.out.println("\nMatch Found!");
+            if ((magicHand[i].toString()).equals(luckyCard.toString())){
+                System.out.println("\nMatch Found!\n You Won!");
                 
                 match++;
             }
+            
+        }
+        
+        //checking if user lost
+        if (match == 0) {
+            System.out.println("You Lost...\nTry Again!");
         }
         
         //presenting a report to user at the end
-        System.out.println(userCard.report(match));
+        System.out.println(luckyCard.report(match));
         
-        Card luckyCard = new Card();
-        luckyCard.setSuit("Hearts");
-        luckyCard.setValue(7);
         
         
     }
