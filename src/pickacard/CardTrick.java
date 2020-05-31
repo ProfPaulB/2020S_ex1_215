@@ -27,6 +27,7 @@ public class CardTrick {
         int CardValue = input.nextInt();
         input.nextLine();
         
+        
         System.out.print("Enter suit ");
         
         String CardSuit = input.nextLine();
