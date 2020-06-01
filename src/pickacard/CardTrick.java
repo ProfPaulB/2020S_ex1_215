@@ -25,7 +25,7 @@ public class CardTrick {
        
        
         luckyCard.setValue(5);                          
-        a.setSuit(Card.SUITS[3]);
+        luckyCard.setSuit(Card.SUITS[3]);
      
        for (Card magicHand1 : magicHand) {     
      
