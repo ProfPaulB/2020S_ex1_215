@@ -21,17 +21,15 @@ public class CardTrick {
              magicHand[i] = c;
         }
      
-          Card a = new Card();
-          Scanner in = new Scanner(System.in);
-      
-        System.out.println("Enter card value (1-13)");     
-        a.setValue(in.nextInt());                          
-        System.out.println("Enter card suit (0-3");
-        a.setSuit(Card.SUITS[in.nextInt()]);
+          Card luckyCard = new Card();
+       
+       
+        luckyCard.setValue(5);                          
+        a.setSuit(Card.SUITS[3]);
      
        for (Card magicHand1 : magicHand) {     
      
-            if (a.getValue() == magicHand1.getValue() && a.getSuit().equalsIgnoreCase(magicHand1.getSuit())){
+            if (luckyCard.getValue() == magicHand1.getValue() && luckyCard.getSuit().equalsIgnoreCase(magicHand1.getSuit())){
                 System.out.println("You win It is  a match!");
             }else{
                 System.out.println("Not a Match. the card was" + magicHand1.getValue() + " in suit: " + magicHand1.getSuit());
