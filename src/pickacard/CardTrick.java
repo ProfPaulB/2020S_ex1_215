@@ -15,20 +15,22 @@ public class CardTrick {
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             c.setValue((int)((Math.random()*12)+1)+1);
-            c.setSuit(Card.SUITS[(int)Math.random()*4]);
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
+            //c.setValue(insert call to random number generator here) 
+           //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+             magicHand[i] = c;
         }
-
-           Card a = new Card();
-        Scanner in = new Scanner(System.in);                
-
+     
+          Card a = new Card();
+          Scanner in = new Scanner(System.in);
+      
         System.out.println("Enter card value (1-13)");     
         a.setValue(in.nextInt());                          
         System.out.println("Enter card suit (0-3");
         a.setSuit(Card.SUITS[in.nextInt()]);
-
-       for (Card magicHand1 : magicHand) {         
+     
+       for (Card magicHand1 : magicHand) {     
+     
             if (a.getValue() == magicHand1.getValue() && a.getSuit().equalsIgnoreCase(magicHand1.getSuit())){
                 System.out.println("You win It is  a match!");
             }else{
